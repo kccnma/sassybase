@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sassy Base</title>
+
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro:700" rel="stylesheet">
+
+    <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="site-header fadeanddropIn">
+        <div class="site-identity">
+            <h1><a href="#">Sassy Base</a></h1>
+        </div>
+        <nav class="site-navigation">
+            <ul class="nav">
+                <li><a href="#instructions">Instructions</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#layout">Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero text-centered fadeanddropIn">
+
+            <div class="container">
+                <h2 class="headline">Sassy Base</h2>
+                <h3 class="subheadline">A Simple Sassy CSS Framework</h3>
+
+                <p>For a fast, flexible, front-end start that can be fully customized for bespoke UI designs.</p>
+
+                <a class="button" href="#instructions">Get Started</a>
+            </div>
+        </section>
+
+        <section id="instructions">
+            <div class="container fadeanddropIn">
+
+                <h2 class="sectionhead">Instructions</h2>
+
+                <ol class="narrow">
+                    <li>
+                        <h3>Set it Up</h3>
+                        <ul>
+                            <li>Create a folder named "sassybase" with a sub-folder named "scss" and a sub-sub folder
+                                inside
+                                named "partials"</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Sass it Up</h3>
+                        <ul>
+                            <li>Create a style.scss and define at least one variable at the top and @import at least
+                                one partial below</li>
+                            <li>Use a compiler (e.g. PrePros) to watch your sass files and compile them into a
+                                destination "css" folder with a single style.css file.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Style it Up</h3>
+                        <ul>
+                            <li>Start by setting your base Typography using a typographic scale, then move on to add
+                                any support for webfonts (e.g. Google Fonts) and any helpers that you might need (e.g.
+                                for unique type specimens).</li>
+                            <li>Add components (e.g. buttons)</li>
+                            <li>Make all of your images responsive (NEW)</li>
+                            <li>Use variables to define the breakpoints for your responsive media queries and resize
+                                your body type for small and large screens. (NEW) </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Flex Your Layout Muscles</h3>
+                        <ul>
+                            <li>Instead of using a float-based grid with semantic classnames, try using flexbox or CSS
+                                Grid for a more custom approach to layout (NEW)</li>
+                            <li>Use box-sizing: border-box (NEW)</li>
+                            <li>Create a Flexbox-based grid (NEW)</li>
+                            <li>Use Flexbox to position your structural site elements (e.g. header, footer, and
+                                navigation) (NEW)</li>
+                            <li>Use Flexbox to layout your main content using various approaches and design patterns
+                                (e.g. right, left, and centered content, centered cards, image thumb grids, etc.) (NEW)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="typography">
+            <div class="container fadeanddropIn">
+
+                <h2 class="sectionhead">Typography</h2>
+
+                <small class="meta">Typographic Scale</small>
+
+                <h1>This is a Heading 1</h1>
+                <h2>This is a Heading 2</h2>
+                <h3>This is a Heading 3</h3>
+                <h4>This is a Heading 4</h4>
+                <h5>This is a Heading 5</h5>
+                <h6>This is a Heading 6</h6>
+
+                <p>This is a paragraph. This is <em>italic</em>. This is <strong>bold</strong>. This is a <a href="#">link</a>.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, a amet. Velit, quos impedit illo
+                    doloremque
+                    quasi
+                    tempore quidem mollitia, aliquid voluptas dolorum error placeat culpa numquam quae, nemo itaque.
+                    Dolore
+                    ullam
+                    corporis a animi neque nobis cum, temporibus consectetur similique asperiores nulla soluta
+                    perspiciatis,
+                    qui
+                    autem enim ratione suscipit.
+                </p>
+
+                <p>This is a second paragraph. Consequuntur amet tenetur quibusdam id aperiam quae quos odit, doloribus
+                    totam
+                    cumque delectus fuga animi nostrum saepe ipsum inventore ipsam eaque molestias voluptas quam
+                    dolores ut
+                    corrupti in suscipit. Optio quas officia recusandae amet aut. Id ratione ipsam nihil voluptatem.</p>
+
+                <hr />
+
+                <small class="meta">Type Specimen</small>
+
+                <h2 class="headline">Large Headline</h2>
+                <h3 class="subheadline">Light Subheader</h3>
+                <p class="meta"><span>Meta:</span> Value</p>
+
+                <p>This is a paragraph. This is <em>italic</em>. This is <strong>bold</strong>. This is a <a href="#">link</a>.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, a amet. Velit, quos impedit illo
+                    doloremque
+                    quasi
+                    tempore quidem mollitia, aliquid voluptas dolorum error placeat culpa numquam quae, nemo itaque.
+                    Dolore
+                    ullam
+                    corporis a animi neque nobis cum, temporibus consectetur similique asperiores nulla soluta
+                    perspiciatis,
+                    qui
+                    autem enim ratione suscipit.
+                </p>
+
+                <a class="button">This is a Button</a>
+                <a class="button alt">This is an Alt Button</a>
+
+                <hr />
+
+                <small class="meta">Helpers</small>
+
+                <div class="text-centered">
+                    <h4>This is a Centered Heading</h4>
+
+                    <p>This is a centered paragraph. Consequuntur amet tenetur quibusdam id aperiam quae quos odit,
+                        doloribus
+                        totam
+                        cumque delectus fuga animi nostrum saepe ipsum inventore ipsam eaque molestias voluptas quam
+                        dolores ut
+                        corrupti in suscipit. Optio quas officia recusandae amet aut. Id ratione ipsam nihil
+                        voluptatem.</p>
+
+                </div>
+
+                <hr />
+
+                <small class="meta">Responsive Images</small>
+
+                <img src="https://picsum.photos/g/1600/800/?random" alt="Placeholder Image" />
+
+                <hr />
+
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="container fadeanddropIn"">
+
+                <h2 class=" sectionhead">Layout</h2>
+
+                <small class="meta">Grid</small>
+
+                <div class="demo">
+
+                    <div class="row">
+                        <div class="column">1 Column</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">&frac12; Column</div>
+                        <div class="column">&frac12; Column</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">&frac13; Column</div>
+                        <div class="column">&frac13; Column</div>
+                        <div class="column">&frac13; Column</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">&frac14; Column</div>
+                        <div class="column">&frac14; Column</div>
+                        <div class="column">&frac14; Column</div>
+                        <div class="column">&frac14; Column</div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="column centered">&frac12; Column Centered</div>
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <small class="meta">Left, Right, &amp; Centered Content Layout</small>
+
+                <div class="row">
+                    <div class="column">
+                        <p><img src="https://picsum.photos/g/800/?random" alt="placeholder" /></p>
+                    </div>
+                    <div class="column">
+                        <h3>Right Column</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt lacus eget neque
+                            aliquet
+                            cursus. Nulla ac nisl sed nisi posuere dapibus vitae id sem. Donec porttitor congue felis,
+                            tempus
+                            condimentum nunc semper non. </p>
+                    </div>
+                </div>
+
+                <div class="row swapped">
+                    <div class="column">
+                        <p><img src="https://picsum.photos/g/801/?random" alt="placeholder" /></p>
+                    </div>
+                    <div class="column">
+                        <h3>Left Column</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt lacus eget neque
+                            aliquet
+                            cursus. Nulla ac nisl sed nisi posuere dapibus vitae id sem. Donec porttitor congue felis,
+                            tempus
+                            condimentum nunc semper non. </p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="column centered">
+                        <p><img src="https://picsum.photos/g/802/?random" alt="placeholder" /></p>
+                        <h3>Center Column</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt lacus eget neque
+                            aliquet
+                            cursus. Nulla ac nisl sed nisi posuere dapibus vitae id sem. Donec porttitor congue felis,
+                            tempus
+                            condimentum nunc semper non. </p>
+                    </div>
+                </div>
+
+                <hr />
+
+                <small class="meta">Centered Cards</small>
+
+                <h4 class="text-centered">Colors:</h4>
+
+                <ul class="cards text-centered centered">
+                    <li><img src="https://via.placeholder.com/100/333333/ffffff?text=333333" alt="Body Text Color" />
+                        <p>Body Text</p>
+                    </li>
+                    <li><img src="https://via.placeholder.com/100/000000/ffffff?text=000000" alt="Heading Text Color" />
+                        <p>H1, H2, ...</p>
+                    </li>
+                    <li><img src="https://via.placeholder.com/100/213B5A/ffffff?text=213B5A" alt="Accent Color" />
+                        <p>Accent</p>
+                    </li>
+                    <li><img src="https://via.placeholder.com/100/3399cc/ffffff?text=3399CC" alt="Link Color" />
+                        <p>Links</p>
+                    </li>
+                    <li><img src="https://via.placeholder.com/100/006699/ffffff?text=006699" alt="Dark Link Color" />
+                        <p>Link Hover</p>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <small class="meta">Thumb Image Grids</small>
+
+                <ul class="thumbgrid">
+                    <li>
+                        <a href="#"><img src="https://picsum.photos/g/400/?random" alt="placeholder" /></a>
+                        <p class="caption">Caption</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://picsum.photos/g/401/?random" alt="placeholder" /></a>
+                        <p class="caption">Caption</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://picsum.photos/g/402/?random" alt="placeholder" /></a>
+                        <p class="caption">Caption</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://picsum.photos/g/403/?random" alt="placeholder" /></a>
+                        <p class="caption">Caption</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://picsum.photos/g/404/?random" alt="placeholder" /></a>
+                        <p class="caption">Caption</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://picsum.photos/g/405/?random" alt="placeholder" /></a>
+                        <p class="caption">Caption</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://picsum.photos/g/406/?random" alt="placeholder" /></a>
+                        <p class="caption">Caption</p>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <nav class="site-navigation">
+            <ul class="nav">
+                <li><a href="#instructions">Instructions</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#layout">Layout</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/script.js" />
+    </body>
+
+</html>

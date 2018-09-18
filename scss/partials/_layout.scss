@@ -1,0 +1,96 @@
+/* LAYOUT */
+/*
+#MEDIA QUERIES (Mobile First)
+	#DEFAULT+ (Mobile First - Default Settings in the CSS Above)
+	#SMALL- (Mobile Only Overrides) - max-width: 767px
+	#MEDIUM+ (Tablet) - min-width: 768px
+	#LARGE+ (Desktop) - min-width: 1050px
+	#EXTRALARGE+ (Desktop+) - min-width: 1250px  */
+
+/* SMALL+ (Mobile First Defaults) */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* SMALL- MEDIA QUERY (e.g. for mobile overrides) */
+@media (max-width: $breakpoint-small - 1) {
+  /* Inherits Small/Mobile Body Type from Above */
+  /* Inherits Small/Mobile Fluid Width from Above */
+}
+
+/* #MEDIUM+ MEDIA QUERY */
+@media (min-width: $breakpoint-small) {
+  /* Inherits Small/Mobile Body Type from Above */
+  /* Inherits Small/Mobile Fluid Width from Above */
+}
+
+/* #LARGE+ MEDIA QUERY */
+@media (min-width: $breakpoint-medium) {
+  /* LARGE BODY TYPE */
+  body {
+    font-size: 100%; /* 16px; */
+  }
+
+  /* FIXED WIDTH */
+  .container {
+    width: $breakpoint-medium - 150;
+    padding: 0 50px;
+  }
+}
+
+/* #EXTRA-LARGE+ MEDIA QUERY */
+@media (min-width: $breakpoint-large) {
+  /* EXTRA-LARGE BODY TYPE */
+  body {
+    font-size: 112.5%; /* 18px; */
+  }
+
+  /* FIXED WIDTH */
+  .container {
+    width: $breakpoint-large - 150;
+  }
+}
+
+/* GRID */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5em;
+  justify-content: center;
+  align-items: center;
+  &.swapped {
+    flex-direction: row-reverse;
+  }
+}
+
+.row > .column {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 11em;
+  padding: 1em;
+  &.centered {
+    flex-grow: 0;
+    padding: 1em 0;
+    flex-basis: 38em;
+    text-align: center;
+    max-width: 50%;
+  }
+}
+
+.demo .column {
+  text-align: center;
+  background: #ddd;
+  margin: 0 0.5em 1em 0.5em;
+}
