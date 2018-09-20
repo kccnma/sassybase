@@ -1,13 +1,16 @@
 // VARIABLES
 $type-base: "Source Sans Pro", Helvetica, Arial, sans-serif;
 $type-heading: "Source Serif Pro", Georgia, serif;
+// $type-base: Helvetica, Arial, sans-serif;
+// $type-heading: Georgia, serif;
 $type-linewidth: 38em;
-$type-color-body: #333;
+$type-color-body: rgba(0, 0, 0, 0.8);
 $type-color-headings: #000;
 $type-color-links: #39c;
 $type-color-linksdark: #069;
 
-$color-accent: #213b5a;
+$color-accent: #c6538c;
+$color-hero-bg: #faeff5;
 
 // Breakpoints
 $breakpoint-small: 768px;

@@ -67,7 +67,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -0.5em;
+  margin: 0 -1%em;
   justify-content: center;
   align-items: center;
   &.swapped {
@@ -85,12 +85,12 @@ body {
     padding: 1em 0;
     flex-basis: 38em;
     text-align: center;
-    max-width: 50%;
+    max-width: 48%;
   }
 }
 
 .demo .column {
   text-align: center;
   background: #ddd;
-  margin: 0 0.5em 1em 0.5em;
+  margin: 0 1% 2% 1%;
 }
