@@ -45,7 +45,7 @@ body {
 
   /* FIXED WIDTH */
   .container {
-    width: $breakpoint-medium - 150;
+    width: $breakpoint-medium - 50;
     padding: 0 50px;
   }
 }
@@ -59,7 +59,7 @@ body {
 
   /* FIXED WIDTH */
   .container {
-    width: $breakpoint-large - 150;
+    width: $breakpoint-large - 50;
   }
 }
 
