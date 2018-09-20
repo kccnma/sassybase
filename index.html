@@ -15,18 +15,21 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body id="home">
     <header class="site-header fadeanddropIn">
-        <div class="site-identity">
-            <h1><a href="#">Sassy Base</a></h1>
+        <div class="container">
+            <div class="site-identity">
+                <h1><a href="#">Sassy Base</a></h1>
+            </div>
+            <nav class="site-navigation">
+                <div class="menu-button navicon">Menu</div>
+                <ul class="nav">
+                    <li><a href="#instructions">Instructions</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#layout">Layout</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="site-navigation">
-            <ul class="nav">
-                <li><a href="#instructions">Instructions</a></li>
-                <li><a href="#typography">Typography</a></li>
-                <li><a href="#layout">Layout</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -81,14 +84,21 @@
                     <li>
                         <h3>Flex Your Layout Muscles</h3>
                         <ul>
-                            <li>Instead of using a float-based grid with semantic classnames, try using flexbox or CSS
-                                Grid for a more custom approach to layout (NEW)</li>
+                            <li>Instead of using a float-based grid with semantic classnames (e.g. class="one-third
+                                column"),
+                                try using a flexbox-based grid (NEW)</li>
+                            <li>Consider using flexbox and/or CSS
+                                Grid on a case-by-case basis, for a more custom approach to layout (NEW)
+                                <ul>
+                                    <li>Use Flexbox to position your structural site elements (e.g. header, footer, and
+                                        navigation) (NEW)</li>
+                                    <li>Use Flexbox to layout your main content using various approaches and design
+                                        patterns
+                                        (e.g. right, left, and centered content, centered cards, image thumb grids,
+                                        etc.) (NEW)</li>
+                                </ul>
+                            </li>
                             <li>Use box-sizing: border-box (NEW)</li>
-                            <li>Create a Flexbox-based grid (NEW)</li>
-                            <li>Use Flexbox to position your structural site elements (e.g. header, footer, and
-                                navigation) (NEW)</li>
-                            <li>Use Flexbox to layout your main content using various approaches and design patterns
-                                (e.g. right, left, and centered content, centered cards, image thumb grids, etc.) (NEW)</li>
                         </ul>
                     </li>
                 </ol>
@@ -334,6 +344,7 @@
     <footer class="site-footer">
         <nav class="site-navigation">
             <ul class="nav">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#instructions">Instructions</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#layout">Layout</a></li>
@@ -341,7 +352,7 @@
         </nav>
     </footer>
 
-    <script src="js/script.js" />
-    </body>
+    <script src="js/script.js"></script>
+</body>
 
 </html>

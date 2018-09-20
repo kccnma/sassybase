@@ -1,0 +1,68 @@
+.site-navigation {
+  // MENU BUTTON
+  .menu-button {
+    display: none;
+  }
+
+  // MENU BUTTON EXPANDED & COLLAPSED
+  @media (max-width: $breakpoint-small - 1) {
+    .menu-button {
+      display: block;
+      text-align: right;
+      margin-top: 1.3em;
+      cursor: pointer;
+    }
+    .menu-button + ul {
+      display: none;
+    }
+    .menu-button.expanded + ul {
+      display: block;
+      text-align: right;
+      margin: 0.5em 0.25em 1.5em 0;
+      li {
+        a {
+          padding: 0.15em 0;
+          margin: 0;
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+  }
+
+  // MENU BUTTON NAVICON
+  .menu-button.navicon {
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    &.expanded {
+      color: rgba(255, 255, 255, 0);
+    }
+
+    &:hover {
+      cursor: default;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      color: #fff;
+      content: "\2630";
+      font-size: 1.4em;
+      margin-top: -0.05em;
+      margin-left: 0.5em;
+      width: 1em;
+      height: 1em;
+      line-height: 1em;
+      display: block;
+      transition: all 0.1s ease;
+      transform: rotate(0);
+    }
+
+    &.expanded:after {
+      content: "\2715";
+      transform: rotate(90deg);
+      transition: all 0.5s ease;
+    }
+  }
+}

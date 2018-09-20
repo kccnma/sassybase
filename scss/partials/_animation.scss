@@ -16,7 +16,7 @@
 }
 
 $delay-counter: 0;
-$increment: 0.25;
+$increment: 0.2;
 @for $i from 1 through 10 {
   .fadeanddropIn *:nth-child(#{$i}) {
     $delay-counter: $delay-counter + $increment;
