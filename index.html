@@ -55,27 +55,36 @@
                     <li>
                         <h3>Set it Up</h3>
                         <ul>
-                            <li>Create a folder named "sassybase" with a sub-folder named "scss" and a sub-sub folder
-                                inside
-                                named "partials"</li>
+                            <li>Create a folder named "sassybase" with a sub-folder named "scss"</li>
+                            <li>Inside of the "scss" folder, create a style.scss and define at least one variable at
+                                the top (for SASS compliling/testing purposes).</li>
+                            <li>Create an index.html file that links to a css/style.css file that will eventually get
+                                compiled using a pre-processor (SASS).</li>
                         </ul>
                     </li>
                     <li>
                         <h3>Sass it Up</h3>
                         <ul>
-                            <li>Create a style.scss and define at least one variable at the top and @import at least
-                                one partial below (e.g. a css table of contents partial _toc.scss)</li>
-                            <li>Use a compiler (e.g. PrePros) to watch your sass files and compile them into a
-                                destination "css" folder with a single style.css file.</li>
+                            <li>Use a compiler (e.g. PrePros) to watch your "scss" folder for changes made within your
+                                SASS files (*.scss)
+                                and auto-compile them into a
+                                destination "css" folder.</li>
+                            <li>Inside of the "scss" foler, create a sub folder named "partials" then create a
+                                _toc.scss file inside with your CSS table of contents.</li>
+                            <li>Import your new parital into your main
+                                style.scss file (e.g. @import "partials/toc"; ).</li>
                         </ul>
                     </li>
                     <li>
                         <h3>Style it Up</h3>
                         <ul>
-                            <li>Start by setting your base Typography using a typographic scale, then move on to add
-                                any support for webfonts (e.g. Google Fonts) and any helpers that you might need (e.g.
+                            <li>Start by setting your base Typography using a typographic scale via a new partial file
+                                entitled "_typography.scss"</li>
+                            <li>Add any support for webfonts (e.g. Google Fonts) and any helpers that you might need
+                                (e.g.
                                 for unique type specimens).</li>
-                            <li>Add components (e.g. buttons) and any other commonly used UI elements that you might
+                            <li>Use this partial, or a new _components.scss file, to add any components (e.g. buttons)
+                                and any other commonly used UI elements that you might
                                 need.</li>
                         </ul>
                     </li>
@@ -83,7 +92,8 @@
                         <h3>Make it Responsive</h3>
                         <ul>
                             <li>Make all of your images responsive (NEW)</li>
-                            <li>Use variables to define the breakpoints for your responsive media queries and resize
+                            <li>Create a new partial named _layout.scss and use variables to define the breakpoints for
+                                your responsive media queries then test it by resizing
                                 your body type for small and large screens. (NEW) </li>
                         </ul>
                     </li>
