@@ -58,32 +58,35 @@
                             <li>Create a folder named "sassybase" with a sub-folder named "scss"</li>
                             <li>Inside of the "scss" folder, create a style.scss and define at least one variable at
                                 the top (for SASS compliling/testing purposes).</li>
-                            <li>Create an index.html file that links to a css/style.css file that will eventually get
-                                compiled using a pre-processor (SASS).</li>
+                            <li>Create an index.html file that links to a css/style.css file (that has yet to be
+                                compiled).</li>
                         </ul>
                     </li>
                     <li>
                         <h3>Sass it Up</h3>
                         <ul>
-                            <li>Use a compiler (e.g. PrePros) to watch your "scss" folder for changes made within your
+                            <li>Use a compiler (e.g. Gulp, PrePros, etc.) to watch your "scss" folder for changes in
+                                your
                                 SASS files (*.scss)
                                 and auto-compile them into a
-                                destination "css" folder.</li>
+                                destination "css" folder as native CSS (.css).</li>
                             <li>Inside of the "scss" foler, create a sub folder named "partials" then create a
                                 _toc.scss file inside with your CSS table of contents.</li>
-                            <li>Import your new parital into your main
+                            <li>Import your new partial file into your main
                                 style.scss file (e.g. @import "partials/toc"; ).</li>
                         </ul>
                     </li>
                     <li>
                         <h3>Style it Up</h3>
                         <ul>
-                            <li>Start by setting your base Typography using a typographic scale via a new partial file
+                            <li>Once your SASS setup is tested and working, start styling by setting your base
+                                typography via a new partial file
                                 entitled "_typography.scss"</li>
                             <li>Add any support for webfonts (e.g. Google Fonts) and any helpers that you might need
                                 (e.g.
                                 for unique type specimens).</li>
-                            <li>Use this partial, or a new _components.scss file, to add any components (e.g. buttons)
+                            <li>Use this partial, or crete a new _components.scss file, to add any components (e.g.
+                                buttons)
                                 and any other commonly used UI elements that you might
                                 need.</li>
                         </ul>
