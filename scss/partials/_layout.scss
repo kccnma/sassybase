@@ -67,7 +67,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1%em;
+  margin: 0 -1%;
   justify-content: center;
   align-items: center;
   &.swapped {
@@ -77,20 +77,17 @@ body {
 
 .row > .column {
   flex-grow: 1;
-  flex-shrink: 1;
   flex-basis: 11em;
-  padding: 1em;
+  margin: 0 1% 2% 1%;
   &.centered {
     flex-grow: 0;
-    padding: 1em 0;
-    flex-basis: 38em;
-    text-align: center;
-    max-width: 48%;
+    &.narrow {
+      flex-basis: $type-linewidth * 0.8;
+    }
   }
 }
 
 .demo .column {
-  text-align: center;
+  padding: 1em;
   background: #ddd;
-  margin: 0 1% 2% 1%;
 }
