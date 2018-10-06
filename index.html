@@ -83,10 +83,13 @@
                             <li>Once your SASS setup is tested and working, start styling by setting your base
                                 typography via a new partial file
                                 entitled "_typography.scss"</li>
-                            <li>Add any support for webfonts (e.g. Google Fonts) and any helpers that you might need
+                            <li>Set your base typography and add support for webfonts (e.g. Google Fonts) if you are
+                                using any and any helpers that you might need
                                 (e.g.
                                 for unique&nbsp;type&nbsp;specimens).</li>
-                            <li>Use this partial, or crete a new _components.scss file, to add any components (e.g.
+                            <li>Consider adding a max-width to your paragraphs to limit the number of characters per
+                                line.&nbsp;(NEW)</li>
+                            <li>Crete a new _components.scss file, to add any components (e.g.
                                 buttons)
                                 and any other commonly used UI elements that you&nbsp;might&nbsp;need.</li>
                         </ul>
@@ -94,10 +97,15 @@
                     <li>
                         <h3>Make it Responsive</h3>
                         <ul>
-                            <li>Make all of your images responsive&nbsp;(NEW)</li>
+                            <li>Create a new partial named _media.scss and make all of your images
+                                responsive&nbsp;(NEW)</li>
                             <li>Create a new partial named _layout.scss and use variables to define the breakpoints for
                                 your responsive media queries then test it by resizing
                                 your body type for small and large&nbsp;screens.&nbsp;(NEW) </li>
+                            <li>Add a reusable container (wrapper) that will scale from fluid width (on small screens)
+                                to a fixed width on larger screen.</li>
+
+                            <li>Use box-sizing: border-box (NEW)</li>
                         </ul>
                     </li>
                     <li>
@@ -117,7 +125,6 @@
                                         thumb grids,&nbsp;etc.)&nbsp;(NEW)</li>
                                 </ul>
                             </li>
-                            <li>Use box-sizing: border-box (NEW)</li>
                         </ul>
                     </li>
                 </ol>
