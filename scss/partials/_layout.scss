@@ -129,4 +129,8 @@ $grid-column-gap: 2%;
   padding: 1em;
   background: #ddd;
   text-align: center;
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

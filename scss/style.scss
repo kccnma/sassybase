@@ -9,8 +9,8 @@ $type-color-headings: #000;
 $type-color-links: #39c;
 $type-color-linksdark: #069;
 
-$color-accent: #c6538c;
-$color-hero-bg: #faeff5;
+$color-accent: rgba(198,83,140,1);
+$color-hero-bg: rgba(198,83,140,.2);
 
 // Breakpoints
 $breakpoint-small: 768px;
@@ -19,9 +19,11 @@ $breakpoint-large: 1250px;
 
 @import "partials/toc";
 @import "partials/typography";
-@import "partials/components";
+@import "partials/buttons";
 @import "partials/media";
 @import "partials/layout";
 @import "partials/structure";
 @import "partials/site-navigation-menu-button";
+@import "partials/cards";
+@import "partials/thumbgrid";
 @import "partials/animation";

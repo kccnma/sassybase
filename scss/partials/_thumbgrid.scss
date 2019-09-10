@@ -1,0 +1,23 @@
+/* THUMB GRID */
+.thumbgrid {
+  margin: 0 -1%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  list-style: none;
+  > * {
+    flex: 0 1 auto;
+    flex-basis: 48%;
+    margin: 1%;
+    @media (min-width: $breakpoint-small) {
+      flex-basis: 31.3333%;
+    }
+    @media (min-width: $breakpoint-medium) {
+      flex-basis: 23%;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
