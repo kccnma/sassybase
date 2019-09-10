@@ -36,7 +36,7 @@ h4,
 h5,
 h6 {
   font-family: "Source Serif Pro", Georgia, serif;
-  margin: 0 0 0.5em 0;
+  margin: 0.5em 0;
   color: #000; }
 
 /* Traditional typographic scale
@@ -126,14 +126,14 @@ hr {
 
 .headline {
   font-size: 4.5em;
-  line-height: 1em;
+  line-height: 1;
   margin: 0;
   color: #c6538c; }
 
 .subheadline {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
-  line-height: 1.1em;
+  line-height: 1.1;
   color: rgba(0, 0, 0, 0.5);
   font-weight: normal;
   margin: 0.25em 0 0.5em 0; }
