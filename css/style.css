@@ -321,18 +321,18 @@ body {
   .site-header a {
     color: #fff;
     text-decoration: none; }
-  .site-header .site-identity h1 {
+  .site-header .site-id h1 {
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     font-weight: normal;
     line-height: 1.2;
     margin: 0.75em 0; }
-  .site-header .site-navigation ul,
-  .site-header .site-navigation li {
+  .site-header .site-nav ul,
+  .site-header .site-nav li {
     margin: 0;
     padding: 0;
     list-style: none; }
-  .site-header .site-navigation ul {
+  .site-header .site-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -342,7 +342,7 @@ body {
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin: 1.1em 0 0.9em 0; }
-  .site-header .site-navigation li a {
+  .site-header .site-nav li a {
     display: block;
     padding: 0.15em 1em;
     margin: 0 0.5em; }
@@ -356,12 +356,12 @@ body {
   .site-footer a {
     color: #fff;
     text-decoration: none; }
-  .site-footer .site-navigation ul,
-  .site-footer .site-navigation li {
+  .site-footer .site-nav ul,
+  .site-footer .site-nav li {
     margin: 0;
     padding: 0;
     list-style: none; }
-  .site-footer .site-navigation ul {
+  .site-footer .site-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -371,7 +371,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 1em 0; }
-  .site-footer .site-navigation li a {
+  .site-footer .site-nav li a {
     display: block;
     padding: 0.2em 1em;
     margin: 0 0.5em; }
@@ -385,34 +385,32 @@ section {
   background: rgba(198, 83, 140, 0.2);
   margin-bottom: 3em; }
 
-.site-navigation .menu-button {
+.site-header .site-nav .menu-button {
   display: none; }
 
 @media (max-width: 767px) {
-  .site-navigation .menu-button {
+  .site-header .site-nav .menu-button {
     display: block;
     text-align: right;
     margin-top: 1.3em;
     cursor: pointer; }
-  .site-navigation .menu-button + ul {
+  .site-header .site-nav ul {
     display: none; }
-  .site-navigation .menu-button.expanded + ul {
+  .site-header .site-nav.expanded ul {
     display: block;
     text-align: right;
     margin: 0.5em 0.25em 1.5em 0; }
-    .site-navigation .menu-button.expanded + ul li a {
+    .site-header .site-nav.expanded ul li a {
       padding: 0.15em 0;
       margin: 0;
       color: rgba(255, 255, 255, 0.7); } }
 
-.site-navigation .menu-button.navicon {
+.site-header .site-nav .menu-button.navicon {
   color: rgba(255, 255, 255, 0);
   position: relative; }
-  .site-navigation .menu-button.navicon.expanded {
-    color: rgba(255, 255, 255, 0); }
-  .site-navigation .menu-button.navicon:hover {
+  .site-header .site-nav .menu-button.navicon:hover {
     cursor: default; }
-  .site-navigation .menu-button.navicon:after {
+  .site-header .site-nav .menu-button.navicon:after {
     position: absolute;
     top: 0;
     right: 0;
@@ -432,7 +430,10 @@ section {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0); }
-  .site-navigation .menu-button.navicon.expanded:after {
+
+.site-header .site-nav.expanded .menu-button.navicon {
+  color: rgba(255, 255, 255, 0); }
+  .site-header .site-nav.expanded .menu-button.navicon:after {
     content: "\2715";
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);

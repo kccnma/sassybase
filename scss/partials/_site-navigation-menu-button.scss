@@ -1,21 +1,29 @@
-.site-navigation {
-  // MENU BUTTON
+// FOR SITE HEADER SITE NAV ONLY
+.site-header .site-nav {
+
+  // HIDE MOBILE MENU BUTTON BY DEFAULT
   .menu-button {
     display: none;
   }
 
-  // MENU BUTTON EXPANDED & COLLAPSED
+  // FOR MOBILE ONLY
   @media (max-width: $breakpoint-small - 1) {
+
+    // SHOW MENU BUTTON ON SMALL SCREENS ONLY
     .menu-button {
       display: block;
       text-align: right;
       margin-top: 1.3em;
       cursor: pointer;
     }
-    .menu-button + ul {
+
+    // HIDE NAV ON SMALL SCREENS ONLY
+    ul {
       display: none;
     }
-    .menu-button.expanded + ul {
+
+    // SHOW NAV WHEN NAV IS "EXPANDED"
+    &.expanded ul {
       display: block;
       text-align: right;
       margin: 0.5em 0.25em 1.5em 0;
@@ -33,14 +41,12 @@
   .menu-button.navicon {
     color: rgba(255, 255, 255, 0);
     position: relative;
-    &.expanded {
-      color: rgba(255, 255, 255, 0);
-    }
 
     &:hover {
       cursor: default;
     }
 
+    // THREE-BAR NAVICON ICON
     &:after {
       position: absolute;
       top: 0;
@@ -59,10 +65,16 @@
       transform: rotate(0);
     }
 
-    &.expanded:after {
+  }
+
+  // SWITCH ICON TO "X" WHEN EXPANDED
+  &.expanded .menu-button.navicon {
+    color: rgba(255, 255, 255, 0);
+    &:after {
       content: "\2715";
       transform: rotate(90deg);
       transition: all 0.5s ease;
     }
   }
+
 }
