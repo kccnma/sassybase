@@ -1,0 +1,71 @@
+//* Grid */
+
+$grid-column-gap: 2%;
+
+.row {
+}
+
+.row > .column {
+  margin-bottom: $grid-column-gap;
+}
+
+@media (min-width: $breakpoint-small) {
+  .row {
+    margin-left: -$grid-column-gap/2;
+    margin-right: -$grid-column-gap/2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &.swapped {
+      flex-direction: row-reverse;
+    }
+    &.centered {
+      flex-direction: column;
+      .column {
+        flex-grow: 0;
+      }
+    }
+  }
+
+  .row > .column {
+    margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
+    flex-grow: 1;
+    //semantic width-based class names
+    &.one-half {
+      width: 50 - $grid-column-gap;
+    }
+    &.one-third {
+      width: 33.3333 - $grid-column-gap;
+    }
+    &.two-thirds {
+      width: 66.6666 - $grid-column-gap;
+    }
+    &.one-fourth {
+      width: 25 - $grid-column-gap;
+    }
+    &.three-fourths {
+      width: 75 - $grid-column-gap;
+    }
+    //semantic pushes
+    &.push-one-third {
+      margin-left: 33.3333 + $grid-column-gap/2;
+    }
+    &.push-one-fourth {
+      margin-left: 25 + $grid-column-gap/2;
+    }
+    &.centered {
+      flex-grow: 0;
+    }
+  }
+}
+
+.demo .column {
+  padding: 1em;
+  background: #ddd;
+  text-align: center;
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

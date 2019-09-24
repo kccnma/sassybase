@@ -9,17 +9,14 @@
 
 /* SMALL+ (Mobile First Defaults) */
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
+  font-size: 87.5%; /* 14px */
   margin: 0;
-  padding: 0;
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding: 0 4%;
 }
@@ -33,20 +30,20 @@ body {
 /* #MEDIUM+ MEDIA QUERY */
 @media (min-width: $breakpoint-small) {
   /* Inherits Small/Mobile Body Type from Above */
-  /* Inherits Small/Mobile Fluid Width from Above */
+  /* Inherits Small/Mobile Fluid Width from Above */  
+  body {
+    font-size: 100%; /* 16px; */
+  }
 }
 
 /* #LARGE+ MEDIA QUERY */
 @media (min-width: $breakpoint-medium) {
   /* LARGE BODY TYPE */
-  body {
-    font-size: 100%; /* 16px; */
-  }
+
 
   /* FIXED WIDTH */
   .container {
-    width: $breakpoint-medium - 50;
-    padding: 0 50px;
+    max-width: $breakpoint-medium;
   }
 }
 
@@ -59,78 +56,7 @@ body {
 
   /* FIXED WIDTH */
   .container {
-    width: $breakpoint-large - 50;
+    max-width: $breakpoint-large;
   }
 }
 
-//* Grid */
-
-$grid-column-gap: 2%;
-
-.row {
-}
-
-.row > .column {
-  margin-bottom: $grid-column-gap;
-}
-
-@media (min-width: $breakpoint-small) {
-  .row {
-    margin-left: -$grid-column-gap/2;
-    margin-right: -$grid-column-gap/2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    &.swapped {
-      flex-direction: row-reverse;
-    }
-    &.centered {
-      flex-direction: column;
-      .column {
-        flex-grow: 0;
-      }
-    }
-  }
-
-  .row > .column {
-    margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
-    flex-grow: 1;
-    //semantic width-based class names
-    &.one-half {
-      width: 50 - $grid-column-gap;
-    }
-    &.one-third {
-      width: 33.3333 - $grid-column-gap;
-    }
-    &.two-thirds {
-      width: 66.6666 - $grid-column-gap;
-    }
-    &.one-fourth {
-      width: 25 - $grid-column-gap;
-    }
-    &.three-fourths {
-      width: 75 - $grid-column-gap;
-    }
-    //semantic pushes
-    &.push-one-third {
-      margin-left: 33.3333 + $grid-column-gap/2;
-    }
-    &.push-one-fourth {
-      margin-left: 25 + $grid-column-gap/2;
-    }
-    &.centered {
-      flex-grow: 0;
-    }
-  }
-}
-
-.demo .column {
-  padding: 1em;
-  background: #ddd;
-  text-align: center;
-  p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
