@@ -1,13 +1,10 @@
 /* STRUCTURE */
 .site-header {
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
   background-color: $color-accent;
   color: #fff;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
 
   a {
     color: #fff;

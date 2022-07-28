@@ -129,7 +129,7 @@ hr {
   display: block;
   content: "";
   width: 50px;
-  border: 4px solid #c6538c;
+  border: 4px solid rgb(198, 83, 140);
   margin: 1em auto 6em auto;
 }
 
@@ -145,7 +145,7 @@ hr {
   font-size: 4.5em;
   line-height: 1;
   margin: 0;
-  color: #c6538c;
+  color: rgb(198, 83, 140);
 }
 
 .subheadline {
@@ -359,11 +359,9 @@ body {
 
 /* STRUCTURE */
 .site-header {
-  padding: 0.5em 0;
-  background-color: #c6538c;
+  padding: 0.5em 1em;
+  background-color: rgb(198, 83, 140);
   color: #fff;
-}
-.site-header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,7 +407,7 @@ body {
   margin-top: 6em;
   border-top: 1px solid #ccc;
   padding: 0.5em 1em;
-  background-color: #c6538c;
+  background-color: rgb(198, 83, 140);
   color: #fff;
 }
 .site-footer a {
@@ -452,12 +450,15 @@ section {
 
 .site-header .site-nav .menu-button {
   display: none;
+  background-color: transparent;
+  border: none;
 }
 @media (max-width: 767px) {
   .site-header .site-nav .menu-button {
     display: block;
     text-align: right;
-    margin-top: 1.3em;
+    margin-top: 0.75em;
+    border: 1px solid white;
     cursor: pointer;
   }
   .site-header .site-nav ul {
@@ -476,6 +477,7 @@ section {
 }
 .site-header .site-nav .menu-button.navicon {
   color: rgba(255, 255, 255, 0);
+  border: none;
   position: relative;
 }
 .site-header .site-nav .menu-button.navicon:hover {
@@ -488,31 +490,33 @@ section {
   cursor: pointer;
   color: #fff;
   content: "☰";
-  font-size: 1.4em;
-  margin-top: -0.05em;
-  margin-left: 0.5em;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
   width: 1em;
   height: 1em;
-  line-height: 1em;
+  line-height: 0.8;
   display: block;
-  -webkit-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease;
   -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
           transform: rotate(0);
+  padding: 0.1em;
 }
 .site-header .site-nav.expanded .menu-button.navicon {
   color: rgba(255, 255, 255, 0);
 }
 .site-header .site-nav.expanded .menu-button.navicon:after {
+  right: -0.4em;
+  line-height: 1;
   content: "✕";
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 /* CARDS */
@@ -614,8 +618,8 @@ section {
   }
 }
 .fadeanddropIn * {
-  -webkit-animation: fadeanddropIn 1s ease-out forwards;
-          animation: fadeanddropIn 1s ease-out forwards;
+  -webkit-animation: fadeanddropIn 0.7s ease-out forwards;
+          animation: fadeanddropIn 0.7s ease-out forwards;
   opacity: 0;
 }
 

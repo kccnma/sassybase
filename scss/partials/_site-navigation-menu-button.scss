@@ -4,16 +4,19 @@
   // HIDE MOBILE MENU BUTTON BY DEFAULT
   .menu-button {
     display: none;
+    background-color: transparent;
+    border: none;
   }
 
   // FOR MOBILE ONLY
-  @media (max-width: $breakpoint-small - 1) {
+  @media (max-width: ($breakpoint-small - 1)) {
 
     // SHOW MENU BUTTON ON SMALL SCREENS ONLY
     .menu-button {
       display: block;
       text-align: right;
-      margin-top: 1.3em;
+      margin-top: .75em;
+      border: 1px solid white;
       cursor: pointer;
     }
 
@@ -40,6 +43,8 @@
   // MENU BUTTON NAVICON
   .menu-button.navicon {
     color: rgba(255, 255, 255, 0);
+    // margin-top: 1.3em;
+    border: none;
     position: relative;
 
     &:hover {
@@ -54,15 +59,16 @@
       cursor: pointer;
       color: #fff;
       content: "\2630";
-      font-size: 1.4em;
-      margin-top: -0.05em;
-      margin-left: 0.5em;
+      text-align: center;
+      font-size: 2em;
+      margin: 0;
       width: 1em;
       height: 1em;
-      line-height: 1em;
+      line-height: .8;
       display: block;
-      transition: all 0.1s ease;
       transform: rotate(0);
+      padding: .1em;
+      // border: 1px solid white;
     }
 
   }
@@ -71,9 +77,11 @@
   &.expanded .menu-button.navicon {
     color: rgba(255, 255, 255, 0);
     &:after {
+      right: -.4em;
+      line-height: 1;
       content: "\2715";
       transform: rotate(90deg);
-      transition: all 0.5s ease;
+      transition: transform 0.3s ease;
     }
   }
 
